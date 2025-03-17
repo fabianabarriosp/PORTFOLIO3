@@ -1,4 +1,4 @@
-// Select all elements with the "reveal" class
+// Selects all elements with the "reveal" class
 const reveals = document.querySelectorAll('.reveal');
 
 function revealOnScroll() {
@@ -16,10 +16,10 @@ function revealOnScroll() {
     });
 }
 
-// Listen to the scroll event
+// Listens to the scroll event
 window.addEventListener('scroll', revealOnScroll);
 
-// Trigger on page load to reveal elements already in view
+// Triggers on page load to reveal elements already in view
 revealOnScroll();
 
 
@@ -31,3 +31,44 @@ function openModal(id) {
 function closeModal(id) {
     document.getElementById(id).style.display = 'none';
 }
+
+//Projects section 
+// Toggle project dropdown view
+document.querySelectorAll('.project-box').forEach(box => {
+    box.addEventListener('click', function() {
+      // Toggle the dropdown for the clicked project
+      this.classList.toggle('active');
+    });
+  });
+  
+  // Toggle additional text visibility (Ideation, Design, Reflection)
+  function toggleDetails(id) {
+    const moreText = document.getElementById(id);
+    const btn = document.querySelector(`#${id}`).previousElementSibling;
+    if (moreText.style.display === 'none') {
+      moreText.style.display = 'block';
+      btn.classList.add('open');
+    } else {
+      moreText.style.display = 'none';
+      btn.classList.remove('open');
+    }
+  }
+  
+  // Go back to the original project boxes
+  function backToProjects() {
+    document.querySelectorAll('.project-box').forEach(box => {
+      box.classList.remove('active');
+    });
+  }
+
+  //PROCESS PAGES
+  function openProcessPage(projectId) {
+    if (projectId === 1) {
+      window.location.href = 'process1.html';
+    } else if (projectId === 2) {
+      window.location.href = 'process2.html';
+    } else if (projectId === 3) {
+      window.location.href = 'process3.html';
+    }
+  }
+  

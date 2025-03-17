@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-align: justify;
     cursor: default;
+
 }
 
 body {
@@ -57,23 +58,35 @@ section {
     text-align: center;
 }
 
-.cover{
-    width:670px;
-}
+#home {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
 
 #home h1 {
     position: absolute;
-    top: 50%; 
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #1c1c1c;
+    font-size: 4rem;
+    color: #e7e6e6;
     font-family: "Instrument Serif", serif;
     font-size: 50px;
     font-weight:600;
-    text-align: center;
-    z-index: 10; 
-    line-height: 45px;
-  }
+    z-index: 90;
+    mix-blend-mode: difference;
+}
+
+video {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
 
 /* Reveal Animation */
 .reveal {
@@ -101,72 +114,95 @@ section {
 }
 
 /* Projects Section */
-#projects .project-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 25px;
-    row-gap: 40px;
-    margin-top: 20px;
-}
-
-.project {
-    cursor: pointer;
-    text-align: center;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-#projects h2{
-    font-family: "Instrument Serif", serif;
-}
-
-.project h3 {
-    font-family: 'Cabin', sans-serif;
-    margin-top: 10px;
-    font-size: 16px;
-    text-align: center;
-}
-
-.project:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Modal Styles */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    justify-content: center;
-    align-items: flex-start;
-    z-index: 1000;
-}
-
-/* Modal Content */
-.modal-content {
-    background: black;
-    color: white;
+.projects-container {
+    display: flex;
+    justify-content: space-around;
     padding: 20px;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 800px;
-    display: grid;
-    gap: -20px;
-    max-height: 100vh; 
-    overflow-y: auto; 
-}
+  }
+
+  #projects h1{
+    font-family: "Instrument Serif", serif;
+ }
+
+ #projects h2{
+    font-size: 12px;
+    cursor: pointer;
+ }
+  .project-box {
+    width: 30%;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .project-box h2 {
+    text-align: center;
+    color: #000;
+  }
+  
+  /* Dropdown content hidden by default */
+  .dropdown-content {
+    display: none;
+    margin-top: 20px;
+    color: #2c3121;;
+  }
+  
+  .details {
+    margin-top: 15px;
+  }
+  
+  .item {
+    margin-bottom: 15px;
+  }
+  
+  .toggle-btn {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* More text initially hidden */
+  .more-text {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #2c3121;
+  }
+  
+  /* Show dropdown content when active */
+  .project-box.active .dropdown-content {
+    display: block;
+  }
+  
+  /* Back button style */
+  .back-btn {
+    margin-top: 20px;
+    background-color: #DCDFD6;
+    color: #525F34;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Hover effects */
+  .project-box:hover {
+    background-color: #DCDFD6;
+  }
+  
+  /* Style for dropdown arrows */
+  .toggle-btn:after {
+    content: "↓";
+  }
+  
+  .toggle-btn.open:after {
+    content: "↑";
+  }
+  
 
 /* Invisible scrollbar */
 .modal-content::-webkit-scrollbar {
@@ -181,6 +217,9 @@ section {
     margin-bottom: 10px;
     font-family: "Instrument Serif", serif;
     font-size: 30px;
+    opacity: 0; /* Starts hidden */
+    transform: translateY(50px); /* Starts slightly off-screen */
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 #learning-outcomes h2 {

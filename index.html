@@ -19,56 +19,50 @@
 
     <!-- Home Section -->
     <section id="home" class="reveal">
-        <img src="./assets/coverstickers.jpg" alt="cover stickers" class="cover">
-        <h1>FABIANA <br>BARRIOS</h1>
+        <!--CHATGPT Prompt: how to link a video as my cover page, starts automatically when page is refreshed-->
+        <h1>FABIANA<br>BARRIOS</h1>
+        <video autoplay muted playsinline id="coverVideo">
+            <source src="./assets/covervideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="reveal">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <!-- Project 1 -->
-            <div class="project" onclick="openModal('project1')">
-                <img src="./assets/magazineCOVER.png" alt="studio creation cover">
-                <h3>Studio Creation</h3>
-            </div>
-            <!-- Project 2 -->
-            <div class="project" onclick="openModal('project2')">
-                <img src="./assets/blikCOVER.png" alt=" portfolio cover">
-                <h3>Portfolio</h3>
-            </div>
-            <!-- Project 3 -->
-            <div class="project" onclick="openModal('project3')">
-                <img src="./assets/monkCOVER.png" alt="beyond boardgames cover">
-                <h3>Beyond Boardgames</h3>
-            </div>
-        </div>
-
-        <!-- Modals for Projects -->
-        <!-- Project 1 Modal -->
-        <div id="project1" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('project1')">&times;</span>
-        
-            </div>
-        </div>
-        
-
-        <!-- Project 2 Modal -->
-        <div id="project2" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('project2')">&times;</span>
-        
-            </div>
-        </div>
-
-        <!-- Project 3 Modal -->
-        <div id="project3" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('project3')">&times;</span>
-        
-            </div>
-        </div>
+        <h1>Projects</h1>
+        <div class="projects-container">
+            <div class="projects-container">
+                <!-- Project Box 1 -->
+                <div class="project-box" id="project1">
+                  <h2>Studio Creation</h2>
+                  <div class="dropdown-content">
+                    <h4>Abstract</h4>
+                    <p class="abstract">This project is divided into different phases where we formed groups, created a studio brand identity and selected a real-world client to work for and apply our skills in a practical setting.</p>
+                    <button class="process-btn" onclick="openProcessPage(1)">PROCESS</button>
+                  </div>
+                </div>
+              
+                <!-- Project Box 2 -->
+                <div class="project-box" id="project2">
+                  <h2>Portfolio</h2>
+                  <div class="dropdown-content">
+                    <h4>Abstract</h4>
+                    <p class="abstract">This project is to showcase my work done throughout the semester, what I did, what I learned, what I would change.</p>
+                    <button class="process-btn" onclick="openProcessPage(2)">PROCESS</button>
+                  </div>
+                </div>
+              
+                <!-- Project Box 3 -->
+                <div class="project-box" id="project3">
+                  <h2>Beyond Boardgames</h2>
+                  <div class="dropdown-content">
+                    <h4>Abstract</h4>
+                    <p class="abstract">This is the second phase of the Studio Creation project where we were assigned a real-world client to work for and apply our skills in a practical setting. We sent a motivation video to a list of clients and got selected to represent Petra & Maikel Inc. ----- Beyond Boardgames. We combined the traditionality of boardgames and modernity of technology.</p>
+                    <button class="process-btn" onclick="openProcessPage(3)">PROCESS</button>
+                  </div>
+                </div>
+              </div>
+                  
     </section>
 
     <!-- Learning Outcomes Section -->
