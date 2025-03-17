@@ -1,10 +1,11 @@
 /* General */
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Lexend+Exa:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Bona Nova", serif;
+    font-family: "Lexend Exa", sans-serif;
     text-align: justify;
     cursor: default;
 }
@@ -68,11 +69,13 @@ section {
     top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #0e0e0e;
+    color: #1c1c1c;
+    font-family: "Instrument Serif", serif;
     font-size: 40px;
     font-weight: 600;
     text-align: center;
     z-index: 10; 
+    line-height: 40px;
   }
 
 /* Reveal Animation */
