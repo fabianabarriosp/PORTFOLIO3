@@ -164,29 +164,36 @@ video {
     cursor: pointer;
   }
   
-  /* More text initially hidden */
-  .more-text {
-    display: none;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #2c3121;
-  }
   
   /* Show dropdown content when active */
   .project-box.active .dropdown-content {
     display: block;
   }
   
-  /* Back button style */
+  .process-btn {
+    margin-top: 20px;
+    background-color: #525F34;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 30%;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
   .back-btn {
     margin-top: 20px;
     background-color: #DCDFD6;
     color: #525F34;
+    font-weight: 500;
     border: none;
     padding: 10px;
-    width: 100%;
+    width: 10%;
     cursor: pointer;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   /* Hover effects */
@@ -204,10 +211,36 @@ video {
   }
   
 
-/* Invisible scrollbar */
-.modal-content::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
+/*Process pages*/
+.dropdown-container {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.dropdown {
+    background-color: #DCDFD6;
+    border: 1px solid #757f5d99;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.rotate {
+    transform: rotate(180deg);  /* Rotates arrow when expanded */
 }
 
 

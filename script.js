@@ -71,4 +71,13 @@ document.querySelectorAll('.project-box').forEach(box => {
       window.location.href = 'process3.html';
     }
   }
-  
+
+  //process dropdown
+         // Get all dropdowns
+         const dropdowns = document.querySelectorAll('.dropdown');
+
+         dropdowns.forEach(dropdown => {
+             dropdown.addEventListener('click', () => {
+                 dropdown.classList.toggle('active');
+             });
+         });
