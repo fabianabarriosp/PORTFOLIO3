@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#learning-outcomes">Learning Outcomes</a></li>
+            <li><a href="#sources">Sources</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="reveal">
+        <img src="./assets/coverstickers.jpg" alt="cover stickers" class="cover">
+        <h1>Fabiana <br>Barrios</h1>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="reveal">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <!-- Project 1 -->
+            <div class="project" onclick="openModal('project1')">
+                <img src="./assets/magazineCOVER.png" alt="studio creation cover">
+                <h3>Studio Creation</h3>
+            </div>
+            <!-- Project 2 -->
+            <div class="project" onclick="openModal('project2')">
+                <img src="./assets/blikCOVER.png" alt=" portfolio cover">
+                <h3>Portfolio</h3>
+            </div>
+            <!-- Project 3 -->
+            <div class="project" onclick="openModal('project3')">
+                <img src="./assets/monkCOVER.png" alt="beyond boardgames cover">
+                <h3>Beyond Boardgames</h3>
+            </div>
+        </div>
+
+        <!-- Modals for Projects -->
+        <!-- Project 1 Modal -->
+        <div id="project1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('project1')">&times;</span>
+        
+            </div>
+        </div>
+        
+
+        <!-- Project 2 Modal -->
+        <div id="project2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('project2')">&times;</span>
+        
+            </div>
+        </div>
+
+        <!-- Project 3 Modal -->
+        <div id="project3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('project3')">&times;</span>
+        
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Outcomes Section -->
+    <section id="learning-outcomes" class="reveal">
+        <h1>Learning Outcomes</h1>
+    
+        <!-- LO1 -->
+        <h2>LO1: Conceptualize, design, and develop interactive media products</h2>
+        <div class="LO">
+            <p>You create engaging concepts and translate them into interactive validated media products by applying user-centered design principles, visual design techniques and by exploring emerging trends and developments in media, design and technologies.</p>
+        </div>
+        <div class="evidence-links">
+            <a href="https://www.figma.com/design/Oo6GLQUolyw6YTXA1C0jam/Portfolio-sem3?node-id=230-141&t=5kYVehGgyX2EJ1h1-0" target="_blank">Portfolio - Figma</a>
+            <a href="./assets/HCDworkshop.jpeg" target="_blank">HCD Workshop</a>
+        </div>
+        <div class="LO-reflection">
+            <p>reflection</p>
+        </div>
+    
+        <!-- LO2 -->
+        <h2>LO2: Transferable Production</h2>
+        <div class="LO">
+            <p>You document and comment your code using version control in a personal and team context and communicate technical recommendations.</p>
+        </div>
+        <div class="evidence-links">
+            <a href="https://github.com/fabianabarriosp/PORTFOLIO3.git" target="_blank">GIT - Portfolio </a>
+        </div>
+        <div class="LO-reflection">
+            <p>reflection</p>
+        </div>
+    
+        <!-- LO3 -->
+        <h2>LO3: Creative Iterations</h2>
+        <div class="LO">
+            <p>You present the successive iterations of your creative process, and the connections between them, of your methodically substantiated, iterative design and development process.</p>
+        </div>
+        <div class="evidence-links">
+            <a href="https://www.figma.com/design/Oo6GLQUolyw6YTXA1C0jam/Portfolio-sem3?node-id=230-141&t=5kYVehGgyX2EJ1h1-0" target="_blank">Portfolio - Figma</a>
+            <a href="./assets/B&Astudiocreation.png" target="_blank">Studio Creation - Before & After</a>
+            <a href="https://www.figma.com/design/BGqCZXu1yDtVYsHUynJAZF/Mood-Board-and-Idea?node-id=250-3&t=ZZfchOly53OV0BVa-0" target="_blank">Studio Creation - Figma iterations</a>
+        </div>
+        <div class="LO-reflection">
+            <p>reflection</p>
+        </div>
+    
+        <!-- LO4 -->
+        <h2>LO4: Professional Standard</h2>
+        <div class="LO">
+            <p>Both individually and in teams, you apply a relevant methodological approach used in the professional field to formulate project goals, involve stakeholders, conduct applied research, provide advice, make decisions, and deliver reports. In doing so, you keep in view the relevant ethical, intercultural, and sustainable aspects.</p>
+        </div>
+        <div class="evidence-links">
+            <a href="./assets/Team Charter.pdf" target="_blank">Studio Creation - Team Charter</a>
+            <a href="./assets/SLAYGENCYpresentation1.pdf" target="_blank">Studio Creation - Canva presentation</a>
+            <a href="./assets/SLAYGENCYbrandposter.png" target="_blank">Studio Creation - Client Motivation poster</a>
+            <a href="./assets/Board Game Motivation Letter.pdf" target="_blank">Studio Creation - Client Motivation letter</a>
+            <a href="./assets/SLAYGENCYmotivationvideo.mp4" target="_blank">Studio Creation - Client Motivation video</a>
+        </div>
+        <div class="LO-reflection">
+            <p>reflection </p>
+        </div>
+    
+        <!-- LO5 -->
+        <h2>LO5: Personal Leadership</h2>
+        <div class="LO">
+            <p>You are aware of your own strengths and weaknesses, both in the field of ICT and in your personal development. You choose actions in line with your core values to promote your personal growth and develop your learning attitude.</p>
+        </div>
+        <div class="evidence-links">
+            <a href="./assets/SLAYGENCYmotivationvideo.mp4" target="_blank">Studio Creation - Client Motivation video</a>
+            <a href="./assets/FeedPulseINDIVIDUAL.pdf" target="_blank">Feedpulse - Individual</a>
+            <a href="./assets/FeedPulseGROUP.pdf" target="_blank">Feedpulse - Group</a>
+        </div>
+        <div class="LO-reflection">
+            <p>reflection</p>
+        </div>
+    </section>
+
+    <!-- Sources Section -->
+    <section id="sources" class="reveal">
+        <h1>Sources</h1>
+        <p> W3Schools.com. (n.d.).<br>
+            <a href="https://www.w3schools.com/Css/css_text_spacing.asp" target="_blank">https://www.w3schools.com/Css/css_text_spacing.asp</a><br>
+           <em>Consulted: 17th March 2025</em></p><br>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
