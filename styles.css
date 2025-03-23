@@ -392,7 +392,9 @@ video {
 #learning-outcomes .LO-reflection p {
     font-family: "Inter", sans-serif;
     font-size: 14px;
-    border:2px dashed #757F5D;
+    color: #fff;
+    border:2px dashed #a7b092;
+    background-color: #757F5D;
     padding:10px;
     margin-bottom: 105px;
     text-align: center;
