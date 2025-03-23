@@ -439,6 +439,12 @@ video {
 }
 
 /*Sources Section*/
+
+#sources h1{
+    font-family: "Instrument Serif", serif;
+    margin-bottom:20px;
+}
+
 #sources p {
     font-size: 12px;
     color:#3e3e3e;
