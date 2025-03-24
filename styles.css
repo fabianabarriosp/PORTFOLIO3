@@ -6,13 +6,6 @@
     box-sizing: border-box;
     text-align: justify;
     cursor: default;
-    overflow: scroll; 
-    scrollbar-width: none;
-    -ms-overflow-style: none; 
-}
-
-html::-webkit-scrollbar, body::-webkit-scrollbar {
-    display: none; 
 }
 
 body {
@@ -373,6 +366,27 @@ video {
 }
 
 /*PROCCESS PAGE 2*/
+.PREstickers{
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 130px;
+    margin-bottom: 15px;
+}
+
+.stickers{
+    width: 210px;
+    margin-top: 15px;
+    margin-left: 110px;
+    margin-bottom: 15px;
+}
+
+.PREportfolio{
+    width: 300px;
+    margin-top: 15px;
+    margin-left: 60px;
+    margin-bottom: -45px;
+}
+
 /*PROCCESS PAGE 3*/
 /* Learning Outcomes*/
 #learning-outcomes h1 {
