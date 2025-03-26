@@ -13,7 +13,7 @@ body {
     line-height: 1.6;
     scroll-behavior: smooth;
     color: #757F5D;
-    background-color: #fff;
+    background-color: #F4F2EE;
 }
 
 nav {
@@ -70,7 +70,8 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 4rem;
-    color: #e7e6e6;
+    color: #3D4528;
+    text-align: center;
     font-family: "Instrument Serif", serif;
     font-size: 50px;
     font-weight:600;
@@ -148,7 +149,7 @@ video {
   .project-box {
     width: 30%;
     padding: 25px;
-    background-color: #fff;
+    background-color: #a7b092;
     border-radius: 2px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -156,14 +157,14 @@ video {
   
   .project-box h2 {
     text-align: center;
-    color: #000;
+    color: #fff;
   }
   
   /* Dropdown content hidden by default */
   .dropdown-content {
     display: none;
     margin-top: 20px;
-    color: #2c3121;;
+    color: #fff;;
   }
   
   .details {
@@ -387,6 +388,13 @@ video {
     margin-bottom: -45px;
 }
 
+.portfolioFEEDBACK{
+    width: 300px;
+    margin-top: 19px;
+    margin-left: 60px;
+    margin-bottom: 15px;
+}
+
 /*PROCCESS PAGE 3*/
 /* Learning Outcomes*/
 #learning-outcomes h1 {
@@ -394,8 +402,8 @@ video {
     margin-bottom: 10px;
     font-family: "Instrument Serif", serif;
     font-size: 30px;
-    opacity: 0; /* Starts hidden */
-    transform: translateY(50px); /* Starts slightly off-screen */
+    opacity: 0; 
+    transform: translateY(50px);
     transition: opacity 1s ease, transform 1s ease;
 }
 
@@ -405,19 +413,30 @@ video {
 
 #learning-outcomes .LO {
     font-family: 'Bona Nova', serif; 
-    font-size: 10px;
+    font-size: 13px;
     text-align: center;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#learning-outcomes .LO p{
+    font-family: 'Bona Nova', serif; 
+    font-size: 13px;
+    text-align: center;
+    width: 50%;
 }
 
 #learning-outcomes .LO-reflection p {
     font-family: "Inter", sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     color: #fff;
     border:2px dashed #a7b092;
     background-color: #757F5D;
     padding:10px;
     margin-bottom: 105px;
-    text-align: center;
+    text-align: justify;
     width:50%;
     margin-left: 300px;
 }
@@ -438,7 +457,8 @@ video {
 #learning-outcomes .evidence-links a {
     color: #757F5D;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: 600;
     font-family: "Lexend Exa", sans-serif;
 }
 
