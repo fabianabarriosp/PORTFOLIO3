@@ -14,6 +14,9 @@ body {
     scroll-behavior: smooth;
     color: #757F5D;
     background-color: #F4F2EE;
+    background: url('./assets/texture.jpg') repeat,  rgba(245, 243, 240, 0.783);
+    background-size: cover; 
+    background-blend-mode: overlay; /* Adjusts transparency */ 
 }
 
 nav {
