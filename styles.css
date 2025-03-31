@@ -399,6 +399,14 @@ video {
 }
 
 /*PROCCESS PAGE 3*/
+
+.boardgameconcept1{
+    width: 180px;
+    margin-top: 19px;
+    margin-left: 120px;
+    margin-bottom: 15px;
+}
+
 /* Learning Outcomes*/
 #learning-outcomes h1 {
     text-align: center;
