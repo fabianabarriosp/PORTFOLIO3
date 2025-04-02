@@ -399,11 +399,31 @@ video {
 }
 
 /*PROCCESS PAGE 3*/
-
 .boardgameconcept1{
     width: 180px;
     margin-top: 19px;
     margin-left: 120px;
+    margin-bottom: 15px;
+}
+
+.conceptposter1{
+    width: 380px;
+    margin-top: 19px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.conceptposterFEEDBACK{
+    width: 380px;
+    margin-top: 19px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.conceptposter2{
+    width: 200px;
+    margin-top: 19px;
+    margin-left: 90px;
     margin-bottom: 15px;
 }
 
