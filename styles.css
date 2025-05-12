@@ -18,6 +18,9 @@ body {
     background-size: cover; 
     background-blend-mode: overlay; /* Adjusts transparency */ 
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 
 nav {
     position: fixed;
